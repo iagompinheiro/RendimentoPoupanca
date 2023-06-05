@@ -39,9 +39,16 @@ public class Rendimento {
         }
         return rendimento;
     }
+    
+     public double calculaMensal() {
+        double rendMensal;
+        rendMensal = (calculaRendimento() - valor) /quantMeses;
+        return rendMensal;
+    }
 
     public void Resumo() {
         System.out.println("Valor inicial: " + valor);
         System.out.println("Valor após o rendimento: " + calculaRendimento());
+         System.out.println("Valor do rendimento mês a mês: " + calculaMensal());
     }
 }
