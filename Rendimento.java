@@ -1,3 +1,5 @@
+package iagomp;
+
 import java.util.Scanner;
 
 public class Rendimento {
@@ -8,26 +10,20 @@ public class Rendimento {
     private double taxaSelic;
     private double taxaRef;
 
-    public Rendimento(double taxaSelic, double taxaRef) {
-        this.taxaSelic = taxaSelic;
-        this.taxaRef = taxaRef;
-    }
 
     public void interacaoUsuario() {
 
         System.out.println("Digite o valor que você deseja investir:");
-         this.valor = scanner.nextInt();
+        this.valor = scanner.nextInt();
 
         System.out.println("Digite a quantidade de meses do rendimento:");
         this.quantMeses = scanner.nextInt();
-    }
 
-    public int getValor() {
-        return valor;
-    }
+        System.out.println("Digite o valor da taxa Selic:");
+        this.taxaSelic = scanner.nextDouble();
 
-    public int getQuantMeses() {
-        return quantMeses;
+        System.out.println("Digite o valor da taxa referêncial:");
+        this.taxaRef = scanner.nextDouble();
     }
 
     public double calculaRendimento() {
@@ -39,16 +35,17 @@ public class Rendimento {
         }
         return rendimento;
     }
-    
-     public double calculaMensal() {
-        double rendMensal;
-        rendMensal = (calculaRendimento() - valor) /quantMeses;
-        return rendMensal;
+
+    public double calculaMensal() {
+        double rendimentoMensal;
+        rendimentoMensal = (calculaRendimento() - valor) / quantMeses;
+        return rendimentoMensal;
     }
 
     public void Resumo() {
+        interacaoUsuario();
         System.out.println("Valor inicial: " + valor);
         System.out.println("Valor após o rendimento: " + calculaRendimento());
-         System.out.println("Valor do rendimento mês a mês: " + calculaMensal());
+        System.out.println("Valor do rendimento mês a mês: " + calculaMensal());
     }
 }
