@@ -19,10 +19,10 @@ public class Rendimento {
         System.out.println("Digite a quantidade de meses do rendimento:");
         this.quantMeses = scanner.nextInt();
 
-        System.out.println("Digite o valor da taxa Selic:");
+        System.out.println("Digite o valor da taxa Selic atual:");
         this.taxaSelic = scanner.nextDouble();
 
-        System.out.println("Digite o valor da taxa referêncial:");
+        System.out.println("Digite o valor da taxa referêncial atual:");
         this.taxaRef = scanner.nextDouble();
     }
 
