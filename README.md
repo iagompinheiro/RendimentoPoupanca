@@ -13,3 +13,4 @@ Taxa Selic e taxa referêncial atuais.
 
 ## Autor
 Iago Marcelino Pinheiro
+https://www.linkedin.com/in/iago-pinheiro-5a7979258/
