@@ -9,7 +9,7 @@ Qunatidade de meses que irá render o valor investido.
 Taxa Selic e taxa referêncial atuais.
 
 ## Tecnologias utilizadas 
--> Java
+ ● Java
 
 ## Autor
 Iago Marcelino Pinheiro
